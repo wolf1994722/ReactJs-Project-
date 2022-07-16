@@ -1,0 +1,16 @@
+npm config set ca=""  
+npm config set registry http://registry.npmjs.org/
+npm install --no-audit --save @testing-library/jest-dom@^5.14.1 @testing-library/react@^13.0.0 @testing-library/user-event@^13.2.1 @types/jest@^27.0.1 @types/node@^16.7.13 @types/react@^18.0.0 @types/react-dom@^18.0.0 typescript@^4.4.2 web-vitals@^2.1.0
+npm set strict-ssl false 
+npm install --no-audit --save --save-exact --loglevel error react react-dom react-scripts cra-template-typescript   
+npx create-react-app react-typescript-demo --template typescript 
+
+
+Summary
+npm init --yes
+Use the npm list to show the installed packages in the current project as a dependency tree.
+Use npm list --depth=n to show the dependency tree with a specified depth.
+Use npm list --prod to show packages in the dependencies.
+Use npm list --dev to show packages in the devDependencies.
+Use npm list --global to list the global packages.
+Use npm list --json to format the installed packages in the JSON format

@@ -1,0 +1,28 @@
+.sucess{
+    color: rgb(3, 151, 127);    
+    margin: 0;
+    text-shadow:  0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+input{
+    width: 200px;
+    padding: 10px 20px;
+    margin: 3px 5px;
+}
+
+::placeholder{
+    font-size: 12px;
+}
+
+.btn{
+    width: 150px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+.btn:hover{
+    background: rgb(6, 253, 212);
+    color: #fff;
+}

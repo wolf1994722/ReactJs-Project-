@@ -1,0 +1,19 @@
+.heading{
+    color: tomato;
+    font-size: 35px;
+    text-transform: capitalize;
+    border: 1px solid tomato;
+}
+.addition{
+    padding: 0px 10px;
+    display: inline-block;
+    margin: 2px 0;
+    border-color: #aed;
+}
+form{
+    display: inline-block;
+    padding: 20px;
+    background: #eee;
+    text-align: left;
+    resize: none;
+}
