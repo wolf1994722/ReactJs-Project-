@@ -1,0 +1,4 @@
+tpye in terminal to run project
+npm run dev
+
+there is bug in CROS attack due to cookie issues
