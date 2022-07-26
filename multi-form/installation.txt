@@ -1,0 +1,9 @@
+npm install create-react-app
+npm install react
+npm install react-dom
+npm install react-scripts
+
+if material ui is creating problem
+npm config set legacy-peer-deps true
+npm install @mui/material @emotion/react @emotion/styled --legacy-peer-deps
+npm install @mui/icons-material --legacy-peer-deps
