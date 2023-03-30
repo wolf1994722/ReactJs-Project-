@@ -1,0 +1,18 @@
+InCompleted video 5, 59(tut41), 88
+
+https://www.flaticon.com for icon & svg
+https://png2svg.com/
+
+#in cmd admin
+    npm install create-react-app -f
+    npm config get proxy
+    npm config rm proxy
+    npm config rm https-proxy
+    npm config set registry http://registry.npmjs.org/
+
+setState can~ manage with callback
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+    integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+    crossorigin="anonymous" />
