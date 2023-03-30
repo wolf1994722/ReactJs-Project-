@@ -1,0 +1,10 @@
+InCompleted video 5, 59(tut41)
+
+#in cmd admin
+    npm install create-react-app -f
+    npm config get proxy
+    npm config rm proxy
+    npm config rm https-proxy
+    npm config set registry http://registry.npmjs.org/
+
+setState can~ manage with callback

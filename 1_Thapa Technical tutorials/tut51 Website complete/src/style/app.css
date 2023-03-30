@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.9rem !important;
+    color: #565387 !important;
+}
+
+.navbar a {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    transition: 0.25s;
+    text-underline-offset: 7px;
+}
+
+.menu_active {
+    font-weight: bold;
+    border-bottom: 1px solid #565387;
+}
+
+.brand-name {
+    font-weight: 500;
+    color: #3498db;
+}
+
+.btn-custom{
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/** link button */
+.button-10 {
+  margin: 0 auto;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+
+  color: #fff;
+  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+   background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-10:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+
+/** form */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .wrapper {
+    margin: 40px;
+    padding: 25px;
+    width: 70%;
+    background-color: #fff;
+    border-radius: 5px;
+
+    border: 1px solid #000;
+}
+
+.container .wrapper h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container .wrapper form label {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin: 10px;
+}
+
+.container .wrapper form label input {
+    width: 400px;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.container .wrapper form label textarea {
+    max-width: 400px;
+    padding: 5px 10px;
+    resize: none;
+    max-height: 8vh;
+}
+
+.container .wrapper form button {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.button-62 {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+/** footer */
+
+section.footer {
+    height: 10vh;
+}
+
+div.center {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
