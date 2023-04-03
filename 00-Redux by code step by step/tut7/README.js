@@ -1,8 +1,8 @@
 /* 
-    TODO: Container - mapDispatchToProps - mapStateToProps
-    ? container
-        * connect redux with react
-        * import react-redux, action and component
-        * use mapDispatchToProps
-        * use mapStateToProps
+    TODO: complete flow
+        * Make Redux Wrapper in index file
+        * What is provider
+        * Make store
+        * Check Data flow in console
+        * Call Action on button Click
 */

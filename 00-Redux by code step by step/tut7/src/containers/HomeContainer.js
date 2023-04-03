@@ -3,11 +3,9 @@ import { addToCart } from '../Services/Actions/actions'
 
 import Home from '../components/Home'
 
-const state = ''
-
 //* mapStateToProps
 const mapStateToProps = state => ({
-
+    cardData: state.cardItems.cardData
 })
 
 //* mapDispatchToProps
