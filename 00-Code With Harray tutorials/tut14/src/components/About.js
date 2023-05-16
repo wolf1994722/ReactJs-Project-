@@ -1,14 +1,16 @@
-import React, { useContext } from 'react'
-import DarkModeContext from '../context/DarkModeContext'
+import React, { useEffect } from 'react'
 
 const About = (props) => {
-    const [theme] = useContext(DarkModeContext)
-    
+    useEffect(() => {
+        document.title = 'About 🏡'
+        return () => { }
+    }, [])
+
     return (
         <>
             <div className="container my-3">
                 <h2 className={`mb-3`}>About Us 🔥</h2>
-                <div className="accordion" id="accordionExample" data-bs-theme={theme}>
+                <div className="accordion" id="accordionExample">
                     <div className="accordion-item">
                         <h2 className="accordion-header">
                             <button

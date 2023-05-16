@@ -4,6 +4,12 @@ import DarkModeContext from '../context/DarkModeContext'
 
 const Navbar = (props) => {
     const [theme, toggleTheme] = useContext(DarkModeContext)
+
+    const msgReflect = () => {
+        if(theme !== 'dark') props.showAlert("Dark Mode is Enabled 🔥", "success")
+        else props.showAlert("Light Mode is Enabled 🔥", "success")
+    }
+
     return (
         <>
             <nav className={`navbar navbar-expand-lg bg-body-tertiary navbar bg-${theme}`} data-bs-theme={theme}>
@@ -27,7 +33,7 @@ const Navbar = (props) => {
                                 )
                             })}
                         </ul>
-                        <div className="form-check form-switch">
+                        <div className="form-check form-switch" onClick={msgReflect}>
                             <input
                                 className="form-check-input"
                                 type="checkbox"

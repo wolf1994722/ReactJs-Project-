@@ -1,8 +1,11 @@
 import React, { useContext } from 'react'
-import DarkModeContext from '../context/DarkModeContext'
 
 const About = (props) => {
-    const [theme] = useContext(DarkModeContext)
+    const { theme, setTheme } = props
+
+    const changeTheme = (color) => {
+        setTheme(color)
+    }
     
     return (
         <>
