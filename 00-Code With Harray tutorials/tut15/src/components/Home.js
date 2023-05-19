@@ -1,3 +1,4 @@
+import News from './News'
 import React, { Component } from 'react'
 
 export class Home extends Component {
@@ -5,6 +6,7 @@ export class Home extends Component {
     return (
       <>
         Home
+        <News/>
       </>
     )
   }

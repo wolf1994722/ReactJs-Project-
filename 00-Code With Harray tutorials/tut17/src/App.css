@@ -1,0 +1,16 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    width: 100%;
+    padding: 10px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(248,249,250,1) !important;
+}
