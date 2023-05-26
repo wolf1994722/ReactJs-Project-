@@ -5,7 +5,7 @@ const AddNote = () => {
     const [note, setNote] = useState({
         title: '',
         description: '',
-        tag: 'General',
+        tag: '',
     })
     const obj = useContext(NoteContext)
     let { addNote } = obj
@@ -28,6 +28,11 @@ const AddNote = () => {
         }
 
         addNote(note) 
+        setNote({
+            title: '',
+            description: '',
+            tag: '',
+        })
     }
 
     return (
@@ -45,6 +50,7 @@ const AddNote = () => {
                             id="title"
                             name='title'
                             onChange={handleChange}
+                            value={note.title}
                             aria-describedby="emailHelp"
                         />
                     </div>
@@ -57,6 +63,20 @@ const AddNote = () => {
                             className="form-control"
                             id="description"
                             name="description"
+                            onChange={handleChange}
+                            value={note.description}
+                        />
+                    </div>
+                    <div className="mb-3">
+                        <label htmlFor="tag" className="form-label">
+                            tag
+                        </label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            id="tag"
+                            name="tag"
+                            value={note.tag}
                             onChange={handleChange}
                         />
                     </div>
