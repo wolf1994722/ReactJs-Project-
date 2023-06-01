@@ -10,7 +10,7 @@ import {
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
-import { getDatabase, set, ref } from "firebase/database";
+import { getDatabase, set, ref, get, child, onValue } from "firebase/database";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDM0M-dvzsiZhcuoWXUNcxnPXTkBPqRyTQ",
@@ -53,7 +53,7 @@ const FirebaseState = (props) => {
       signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           console.log("successfull login");
-          console.log(userCredential);  
+          console.log(userCredential);
         })
         .catch((err) => {
           console.log("err.code :>> ", err.code);
@@ -115,6 +115,26 @@ const FirebaseState = (props) => {
     signOut(auth);
   };
 
+  const getData = (id) => {
+    const dbRef = ref(getDatabase());
+    get(child(dbRef, `users/${id}`))
+      .then((snapshot) => {
+        if (snapshot.exists()) {
+          console.log(snapshot.val());
+        } else {
+          console.log("No data available");
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+
+    onValue(ref(db, "users"), (snapshot) => {
+      const data = snapshot.val();
+      console.log(data);
+    });
+  };
+
   return (
     <>
       <FirebaseContext.Provider
@@ -128,6 +148,7 @@ const FirebaseState = (props) => {
           signUpWithGoogle,
           checkWeatherLogin,
           LogOut,
+          getData,
         }}
       >
         {props.children}
